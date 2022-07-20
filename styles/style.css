@@ -1,0 +1,238 @@
+/* Font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+/* body margin */
+body {
+    margin: 0;
+
+}
+
+/* banner styles */
+.banner {
+    display: flex;
+    margin: 50px 100px;
+    background: #3f3d3d;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-text {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.banner-heading {
+    font-weight: 700;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.banner-para {
+    margin-bottom: 50px;
+    color: #FFFFFF;
+}
+
+.three-button a {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 16px 25px;
+}
+
+
+
+.banner-image {
+    margin-top: 100px;
+    margin-right: 70px;
+    transition: width 5s;
+}
+
+.banner-image:hover {
+    transform: rotate(20deg);
+}
+
+/* grid layout styles */
+.two-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 20px 300px;
+    justify-content: center;
+
+}
+
+.three-button {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    gap: 30px;
+    padding: 30px;
+    background-color: rgb(58, 54, 54);
+    height: fit-content;
+    width: 200px;
+    margin-right: 20px;
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.grid-layout img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.thumbnail p {
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 2px;
+    text-align: center;
+    word-wrap: normal;
+
+}
+
+button {
+    display: none;
+}
+
+/* footer styles */
+footer {
+    background-color: #3f3d3d;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+}
+
+footer hr {
+    margin: 0 100px;
+}
+
+footer a {
+    color: black;
+}
+
+footer i {
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.list {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    justify-content: center;
+}
+
+/* responsive styles */
+/* mobile device  */
+@media only screen and (max-width:688px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        margin: 25px 50px;
+        background: #3f3d3d;
+        border-radius: 30px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    .banner-text {
+        margin: 0;
+
+    }
+
+    .two-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .three-button {
+        background-color: white;
+        width: 500px;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 10em;
+        margin-left: 70px;
+    }
+
+    .thumbnail img {
+        width: 400px;
+
+    }
+
+    footer .list {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+/* tablet device */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .banner {
+        margin: 25px 20px;
+        padding-bottom: 50px;
+    }
+
+    .banner-text {
+        margin-left: 50px;
+        margin-top: 15px;
+        padding-right: 100px;
+    }
+
+    .two-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .three-button {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 50em;
+        background-color: white;
+        margin-left: 20px;
+        height: 6em;
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .thumbnail img {
+        width: 390px;
+        margin: 0;
+    }
+
+    footer .list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 150px;
+    }
+
+    footer h6 {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    button {
+        display: block;
+        font-size: 30px;
+    }
+
+}
