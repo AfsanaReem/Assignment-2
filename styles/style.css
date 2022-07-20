@@ -44,6 +44,16 @@ body {
     padding: 16px 25px;
 }
 
+.banner-button {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: red;
+    border-radius: 5px;
+    padding: 16px 25px;
+}
+
 
 
 .banner-image {
@@ -98,7 +108,7 @@ body {
 
 }
 
-button {
+.view {
     display: none;
 }
 
@@ -230,7 +240,7 @@ footer i {
         margin-top: 20px;
     }
 
-    button {
+    .view {
         display: block;
         font-size: 30px;
     }
